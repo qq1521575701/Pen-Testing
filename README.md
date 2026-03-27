@@ -15,3 +15,10 @@
     docker pull projectdiscovery/httpx
 ## 站点扫描
     docker run --rm -v $(pwd):/data projectdiscovery/httpx -l /data/result.txt silent -o /data/http_alive.txt 
+
+# 目录扫描
+
+## 下载
+    apt update && apt install ffuf -y
+    
+## 
