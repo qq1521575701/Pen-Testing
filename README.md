@@ -23,3 +23,12 @@
     
 ## 目录扫描
     ffuf -w 目录字典/admin.txt -u host/FUZZ
+
+# SQL注入
+
+## 安装
+    git clone https://github.com/sqlmapproject/sqlmap.git && cd sqlmap
+
+## 注入测试
+    python3 sqlmap.py -r sql.txt --batch
+    
