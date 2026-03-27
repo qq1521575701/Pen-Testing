@@ -27,7 +27,7 @@
 # SQL注入
 
 ## 安装
-    git clone https://github.com/sqlmapproject/sqlmap.git && cd sqlmap
+    cd /root && rm -rf sqlmap && git clone https://github.com/sqlmapproject/sqlmap.git && cd sqlmap && touch sql.txt
 
 ## 注入测试
     python3 sqlmap.py -r sql.txt --batch
