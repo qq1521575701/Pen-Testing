@@ -33,6 +33,6 @@
     python3 sqlmap.py -r sql.txt --batch
 
 ## 用户名爆破
-    ffuf -request req.txt -w 用户名字典.txt -mr '密码错误' -t 800
+    ffuf -request req.txt -w 用户名字典.txt -mr '密码错误' -t 800 -H "Accept-Encoding: identity"
 ## 账号密码爆破
-    ffuf -request req.txt -w username.txt:USERNAME -w password.txt:PASSWORD -mr '200' -t 800
+    ffuf -request req.txt -w username.txt:USERNAME -w password.txt:PASSWORD -mr '200' -t 800 -H "Accept-Encoding: identity"
