@@ -31,4 +31,6 @@
 
 ## 注入测试
     python3 sqlmap.py -r sql.txt --batch
-    
+
+## 爆破
+    ffuf -request req.txt -w 用户名字典.txt -mr '密码错误' -t 100
