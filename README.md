@@ -21,4 +21,5 @@
 ## 下载
     apt update && apt install ffuf -y
     
-## 
+## 目录扫描
+    ffuf -w 目录字典/admin.txt -u host/FUZZ
