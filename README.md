@@ -1,12 +1,14 @@
 # Pen-Testing
 
+    cd /root && rm -rf Pen-Testing && git clone https://github.com/qq1521575701/Pen-Testing.git && cd Pen-Testing
+
 # 子域名爆破
 
 ## 拉取镜像
     docker pull blechschmidt/massdns
 ## dns扫描
     docker run --rm -v $(pwd):/data projectdiscovery/dnsx \
-    -d 19981026.xyz \
+    -d host \
     -w /data/子域名字典.txt \
     -t 3000 \
     -o /data/result.txt \
